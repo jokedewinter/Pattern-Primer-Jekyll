@@ -1,4 +1,4 @@
-# Jekyll version of Pattern-Primer by adactio
+# Jekyll version of Pattern-Primer by Adactio
 
 Forked from the [original Pattern-Primer for PHP by adactio (Jeremy Keith)](https://github.com/adactio/Pattern-Primer)
 
@@ -6,49 +6,49 @@ Inspired by [Ruby (Sinatra) version](https://github.com/micdijkstra/Pattern-Prim
 
 ## Pattern Primer
 
-This is a design communication, testing and process tool.
+This is a design communication, testing, and process tool.
 
-Create little snippets of markup and save them to the "patterns folder" (called _posts in Jekyll). The pattern primer will generate a list of all the patterns in that folder. You will see the pattern rendered as HTML. You will also see the source displayed in a textarea.
+Create little snippets of markup and save them to the “patterns folder” (called `_posts` in Jekyll). The pattern primer will generate a list of all the patterns in that folder. You will see the pattern rendered as HTML. You will also see the source displayed in a textarea. Attach or reference any CSS to test out styles.
 
 ## Why a Jekyll fork?
 
-Why not? I wanted to implement the a version of Pattern-Primer for my Jekyll projects with only Jekyll dependencies (and no PHP dependencies). It can be [built locally with a Jekyll/Ruby environment](http://jekyllrb.com/docs/usage/) or uploaded as a static directory on a remote server – [here is an example of that](http://patternprimer.olivermak.es/). If anything, this tiny effort proves that you can build things other than hacker blogs with Jekyll.
+Why not? [Jekyll](http://jekyllrb.com) is a useful way to build static sites, and it is well-suited for quick prototyping. This is intended as a version of Adactio’s [Pattern Primer](https://github.com/adactio/Pattern-Primer) but without PHP dependencies. It can be [built locally with a Jekyll/Ruby environment](http://jekyllrb.com/docs/usage/) or uploaded as a static directory on a remote server – [here is an example of that](http://patternprimer.olivermak.es/).
 
 ## How to use it
 
 ### Local configuration
 
-1. If you haven't already, [install Jekyll](http://jekyllrb.com/).
+1. If you haven’t already, [install Jekyll](http://jekyllrb.com/).
 2. Clone this repo.
-3. Copy your CSS file to css/global.css (replacing adactio's stock CSS) *or* copy your own CSS to the css directory and direct a link in the HTML to that file.
+3. Copy your CSS file to css/global.css (replacing the default CSS) *or* copy your own CSS to the css directory and direct a link in `_includes/head.html` to that file.
 4. **IMPORTANT:** in the `_config.yml` file, change `baseurl: '/Pattern-Primer-Jekyll'` to `baseurl: ''`
 5. Create your own HTML snippets and add them to the `_posts` folder.
 6. Run the command `jekyll serve` and open <localhost:4000> in your browser.
 
 ### Configuration: **GitHub _User_ Page (user.github.io)** hosted with GitHub Pages
 
-1. Clone/Fork this repo.
+1. Clone/fork this repo.
 2. Rename repo to `user.github.io` (user = your GH username).
-3. Copy your CSS file to css/global.css (replacing adactio's stock CSS) *or* copy your own CSS to the css directory and direct a link in the HTML to that file.
+3. Copy your CSS file to `css/global.css` (replacing the default CSS) *or* copy your own CSS to the `css` directory and direct a link in `_includes/head.html` to that file.
 4. Create your own HTML snippets and add them to the `_posts` folder.
 5. **IMPORTANT:** in the `_config.yml` file, change `baseurl: '/Pattern-Primer-Jekyll'` to `baseurl: ''`
 6. After pushing all of your changes to GitHub `Master` branch, create a new branch and call it `gh-pages`.
-7. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/`
+7. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/`.
 
 ### Configuration: **GitHub _Project_ Page (user.github.io/projectname)** hosted with GitHub Pages
 
 1. Clone/Fork this repo.
-2. Copy your CSS file to css/global.css (replacing adactio's stock CSS) *or* copy your own CSS to the css directory and direct a link in the HTML to that file.
+2. Copy your CSS file to `css/global.css` (replacing the default CSS) *or* copy your own CSS to the `css` directory and direct a link in `_includes/head.html` to that file.
 3. Create your own HTML snippets and add them to the `_posts` folder.
 4. **IMPORTANT:** in the `_config.yml` file, change `baseurl: '/Pattern-Primer-Jekyll'` to `baseurl: '/projectname'`
 5. After pushing all of your changes to GitHub `Master` branch, create a new branch and call it `gh-pages`.
-6. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/projectname`
+6. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/projectname`.
 
-[Learn all about Jekyll on GitHub Pages](http://jekyllrb.com/docs/github-pages/)
+[Learn all about Jekyll on GitHub Pages](http://jekyllrb.com/docs/github-pages/).
 
 ### More configuration notes
 
-**One quirk of using this in Jekyll** (or at least the quick way I created it) is that the patterns are stored in the "_posts" folder. Every post must have identical front matter that looks like this:
+**One quirk of using the pattern primer for Jekyll** is that the patterns are stored in the "_posts" folder. Every post must have identical front matter that looks like this:
 
 ```
 ---
@@ -70,11 +70,11 @@ layout: pattern
 
 <http://patternprimer.olivermak.es/>
 
-Note: my version uses the standard styles written by adactio.
+Note: my version uses the standard styles written by Adactio.
 
 ## Credits
 
-The **original** [Pattern Primer is by adactio](https://github.com/adactio/Pattern-Primer) and should be used if you prefer PHP or aren't already using Jekyll. Many thanks to Jeremy for this great tool!
+The **original** [Pattern Primer is by Adactio](https://github.com/adactio/Pattern-Primer) and should be used if you prefer PHP or aren’t already using Jekyll. Many thanks to Jeremy for this great tool!
 
 ### Contributors
 
