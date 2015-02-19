@@ -5,4 +5,3 @@ markdown: kramdown
 # '/projectname': for subdomains ie: user.github.io/projectname
 baseurl: '/Pattern-Primer-Jekyll'
 permalink: patterns/:title.html
-exclude: ['s3_website.yml']
