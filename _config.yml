@@ -1,6 +1,5 @@
 name: Jekyll Version of Pattern Primer by adactio
-markdown: redcarpet
-pygments: false
+markdown: kramdown
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
 # '/projectname': for subdomains ie: user.github.io/projectname
