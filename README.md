@@ -8,7 +8,7 @@ Inspired by [Ruby (Sinatra) version](https://github.com/micdijkstra/Pattern-Prim
 
 This is a design communication, testing, and process tool.
 
-Create little snippets of markup and save them to the “patterns folder” (a Jekyll [collection](http://jekyllrb.com/docs/collections/) called `_patterns`). The pattern primer will generate a list of all the HTML patterns in that folder. 
+Create little snippets of markup and save them to the `_patterns` directory (a Jekyll [collection](http://jekyllrb.com/docs/collections/)). The pattern primer will generate a list of all the HTML patterns in that folder.
 
 The patterns are rendered as HTML, with a reference source displayed in a `<textarea>` next to each. Attach or reference any CSS to test out styles against these markup patterns.
 
@@ -16,16 +16,17 @@ The patterns are rendered as HTML, with a reference source displayed in a `<text
 
 Why not? [Jekyll](http://jekyllrb.com) is a useful way to build static sites, and it is well-suited for quick prototyping. This is intended as a version of Adactio’s [Pattern Primer](https://github.com/adactio/Pattern-Primer) but without PHP dependencies. It can be [built locally with a Jekyll/Ruby environment](http://jekyllrb.com/docs/usage/) or uploaded as a static directory on a remote server – [here is an example of a hosted version](http://patternprimer.olivermak.es/).
 
-## How to use it
+## Configuration
 
-### Configuration: local hosting
+Make sure to [install Jekyll](http://jekyllrb.com/) first (Ruby required).
 
-1. If you haven’t already, [install Jekyll](http://jekyllrb.com/).
-2. Clone this repo.
-3. Create your own HTML patterns and link your CSS ([instructions](#creating-html)).
-4. Run the command `jekyll serve` and open <http://localhost:4000> in your browser.
+### Option #1: local hosting
 
-### Configuration: **GitHub _User_ Page (user.github.io)** hosted with GitHub Pages
+1. Clone this repo.
+2. Create your own HTML patterns and link your CSS ([instructions](#creating-html)).
+3. Run the command `jekyll serve` and open <http://localhost:4000> in your browser.
+
+### Option #2: **GitHub _User_ Page (user.github.io)** hosted with GitHub Pages
 
 1. Clone/fork this repo.
 2. Rename repo to `user.github.io` (user = your GH username).
@@ -33,7 +34,7 @@ Why not? [Jekyll](http://jekyllrb.com) is a useful way to build static sites, an
 4. After pushing all of your changes to GitHub `Master` branch, create a new branch and call it `gh-pages`.
 5. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/`.
 
-### Configuration: **GitHub _Project_ Page (user.github.io/projectname)** hosted with GitHub Pages
+### Option #3: **GitHub _Project_ Page (user.github.io/projectname)** hosted with GitHub Pages
 
 1. Clone/Fork this repo.
 2. **IMPORTANT:** in the `_config.yml` file, change `baseurl: ''` to `baseurl: '/projectname'`
@@ -41,7 +42,7 @@ Why not? [Jekyll](http://jekyllrb.com) is a useful way to build static sites, an
 4. After pushing all of your changes to GitHub `Master` branch, create a new branch and call it `gh-pages`.
 5. Visit your new site (may take up to 10 minutes to populate) at `http://user.github.io/projectname`.
 
-[Learn all about Jekyll on GitHub Pages](http://jekyllrb.com/docs/github-pages/).
+[Learn more about Jekyll on GitHub Pages](http://jekyllrb.com/docs/github-pages/).
 
 ### Creating HTML patterns
 
