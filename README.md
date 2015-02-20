@@ -67,9 +67,11 @@ There are three methods:
 
 ---
 
-## Work with Markdown
+## (Optionally) Work with Markdown
 
-One nice thing that Jekyll has built-in is a Markdown processor ([kramdown](http://kramdown.gettalong.org) by default). You can use Jekyll Pattern Primer to read Markdown snippets in the `_patterns` folder by setting the `markdown-patterns` option in `_config.yml` to `true`. This is turned off by default because markdownifying HTML with kramdown can change the intended output (typically by adding `<p>` tags). Keeping in mind that it will alter the default HTML snippets, flipping the `markdown-patterns` switch could be useful for documenting HTML output processed with Markdown.
+One nice thing that Jekyll has built-in is a Markdown processor ([kramdown](http://kramdown.gettalong.org) by default). You can use Jekyll Pattern Primer to read Markdown snippets in the `_patterns` folder by setting the `markdown-patterns` option in `_config.yml` to `true`. This is turned off by default because markdownifying HTML with kramdown can change the intended output (typically by adding `<p>` tags). 
+
+Flipping the `markdown-patterns` switch could be useful for documenting HTML output processed with Markdown. Keep in mind that it will fundamentally alter the form of the default HTML snippets included in the project.
 
 ---
 
@@ -79,11 +81,9 @@ One nice thing that Jekyll has built-in is a Markdown processor ([kramdown](http
 - [Node.js](https://github.com/beardtwizzle/pattern-primer-on-node)
 - [Ruby (Sinatra)](https://github.com/micdijkstra/Pattern-Primer-Ruby)
 
-## This is what it looks like
+## This is what it looks like in use
 
-<http://patternprimer.olivermak.es/>
-
-Note: my version uses the standard styles written by Adactio.
+<http://patternprimer.olivermak.es/> (using the default styles of [the original](http://patternprimer.adactio.com))
 
 ## Credits
 
