@@ -1,7 +1,15 @@
-name: Jekyll Version of Pattern Primer by adactio
+name: Jekyll Version of Pattern Primer
 markdown: kramdown
-# change baseurl to:
-# '': for root level domains ie: mycustomdomain.com
-# '/projectname': for subdomains ie: user.github.io/projectname
-baseurl: '/Pattern-Primer-Jekyll'
-permalink: patterns/:title.html
+# baseurl should be set to:
+# '': for local development (localhost:4000)
+# '': for root level domains (mycustomdomain.com)
+# '/projectname': for subdomains (user.github.io/projectname)
+baseurl: ''
+permalink: :title.html
+
+collections:
+  patterns:
+    output: true
+    permalink: patterns/:path/
+
+markdown-patterns: false
