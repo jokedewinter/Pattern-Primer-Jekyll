@@ -23,7 +23,7 @@ Make sure to [install Jekyll](http://jekyllrb.com/) first (Ruby required).
 ### Option #1: local hosting
 
 1. Clone this repo.
-2. Create your own HTML patterns and link your CSS ([instructions](#creating-html)).
+2. Create your own HTML patterns and link your CSS ([instructions](#creating-html-patterns)).
 3. Run the command `jekyll serve` and open <http://localhost:4000> in your browser.
 
 ### Option #2: **GitHub _User_ Page (user.github.io)** hosted with GitHub Pages
