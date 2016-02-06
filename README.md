@@ -93,3 +93,4 @@ The **original** [Pattern Primer is by Adactio](https://github.com/adactio/Patte
 
 - [opattison](https://github.com/opattison)
 - [esteinborn](https://github.com/esteinborn)
+- [tombuckley](https://github.com/tombuckley)
