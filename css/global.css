@@ -273,7 +273,7 @@ input[type="submit"] {
 	line-height: 1;
 	background-color: #369;
 	color: #fff;
-	background-image: -webkit-gradient(linear,0% 0%,0% 100%,from(#47a),to(#258));
+	background-image: -webkit-linear-gradient(0% 0%,0% 100%,from(#47a),to(#258));
 	background-image: -moz-linear-gradient(top,#47a,#258);
 	background-image: -o-linear-gradient(top,#47a,#258);
 	background-image: linear-gradient(top,#47a,#258);
@@ -290,7 +290,7 @@ input[type="submit"]:hover,
 input[type="submit"]:focus {
 	outline: none;
 	background-color: #c03;
-	background-image: -webkit-gradient(linear,0% 0%,0% 100%,from(#d04),to(#b02));
+	background-image: -webkit-linear-gradient(0% 0%,0% 100%,from(#d04),to(#b02));
 	background-image: -moz-linear-gradient(top,#d04,#b02);
 	background-image: -o-linear-gradient(top,#d04,#b02);
 	background-image: linear-gradient(top,#d04,#b02);
@@ -301,7 +301,7 @@ button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
 	background-color: #900;
-	background-image: -webkit-gradient(linear,0% 0%,0% 100%,from(#800),to(#a00));
+	background-image: -webkit-linear-gradient(0% 0%,0% 100%,from(#800),to(#a00));
 	background-image: -moz-linear-gradient(top,#800,#a00);
 	background-image: -o-linear-gradient(top,#800,#a00);
 	background-image: linear-gradient(top,#800,#a00);
