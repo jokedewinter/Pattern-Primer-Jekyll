@@ -1,15 +1,25 @@
-name: Jekyll Version of Pattern Primer
+
+name: BioThemes Pattern Library
 markdown: kramdown
+
 # baseurl should be set to:
 # '': for local development (localhost:4000)
 # '': for root level domains (mycustomdomain.com)
 # '/projectname': for subdomains (user.github.io/projectname)
+
 baseurl: ''
 permalink: :title.html
 
 collections:
   patterns:
     output: true
-    permalink: patterns/:path/
-
+    title: Patterns
+    permalink: /patterns/:path/
+  
+  styles:
+    output: true
+    title: Styles
+    permalink: /styles/:path/
+          
 markdown-patterns: false
+markdown-styles: false

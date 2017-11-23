@@ -1,3 +1,14 @@
+# How to use this
+https://github.com/opattison/Pattern-Primer-Jekyll
+
+Set Codekit to this external server address: http://localhost/..[..]../_site
+
+View the site through Codekit and in terminal do this: $ build --watch
+
+
+
+
+
 # Jekyll version of Pattern Primer
 
 Forked from the [original Pattern-Primer for PHP by Adactio (Jeremy Keith)](https://github.com/adactio/Pattern-Primer)

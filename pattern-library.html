@@ -1,0 +1,53 @@
+---
+layout: default
+title: Pattern Library
+---
+
+<div class="lib__site">
+
+	<header class="lib__header">
+		<h1 class="lib">Pattern library</h1>
+		<h3 class="lib">OncoTherics / BioTherics / BioSuspension</h3>
+
+		<nav class="lib__nav">
+			<ul>
+				{% for pattern in site.patterns %}
+					<li><a href="#{{ pattern.title | slugify }}">{{ pattern.title }}</a></li>
+				{% endfor %}
+			</ul>
+
+			<p>&rarr; <a href="index.html">Styles collection</a></p>
+		</nav>
+	</header>
+	
+	<div class="lib__patterns">
+		{% for pattern in site.patterns %}
+			
+			<section id="{{ pattern.title | slugify }}" class="lib__pattern">
+				
+				<header>
+					<h2 class="lib">{{ pattern.title }}</h2>
+					<p class="lib">{{ pattern.description }}</p>
+				</header>
+				
+				<div class="lib__style">
+					{% if site.markdown-patterns %}
+						{{ pattern.content | markdownify }}
+					{% else %}
+						{{ pattern.content }}
+					{% endif %}
+				</div>
+
+				{% if pattern.show_code %}
+					<a href="#example-{{ pattern.title | slugify }}" class="lib__link">View example code &rarrc;</a>
+					<div id="example-{{ pattern.title | slugify }}" class="lib__source">
+						<pre><code>{% if site.markdown-patterns %}{{ pattern.content | markdownify | xml_escape }}{% else %}{{ pattern.content | xml_escape }}{% endif %}</code></pre>
+					</div>
+				{% endif %}
+
+			</section><!-- .lib__pattern -->	
+
+		{% endfor %}
+	</div><!-- .lib__patterns -->
+
+</div><!-- .lib__site -->

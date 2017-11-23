@@ -1,16 +1,53 @@
 ---
-layout: fundamental
-title: Pattern Primer
+layout: default
+title: Style Guide
 ---
 
-{% for pattern in site.patterns %}
-<div class="pattern">
-  <div class="display">
-    {% if site.markdown-patterns %}{{ pattern.content | markdownify }}{% else %}{{ pattern.content }}{% endif %}
-  </div>
-  <div class="source">
-    <textarea rows="6" cols="30">{% if site.markdown-patterns %}{{ pattern.content | markdownify | xml_escape }}{% else %}{{ pattern.content | xml_escape }}{% endif %}</textarea>
-    <p><a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a></p>
-  </div>
-</div>
-{% endfor %}
+<div class="lib__site">
+
+	<header class="lib__header">
+		<h1 class="lib">Style Guide</h1>
+		<h3 class="lib">OncoTherics / BioTherics / BioSuspension</h3>
+
+		<nav class="lib__nav">
+			<ul>
+				{% for style in site.styles %}
+					<li><a href="#{{ style.title | slugify }}">{{ style.title }}</a></li>
+				{% endfor %}
+			</ul>
+			
+			<p>&rarr; <a href="pattern-library.html">Patterns collection</a></p>
+		</nav>
+	</header>
+	
+	<div class="lib__patterns">
+		{% for style in site.styles %}
+			
+			<section id="{{ style.title | slugify }}" class="lib__pattern">
+				
+				<header>
+					<h2 class="lib">{{ style.title }}</h2>
+					<p class="lib">{{ style.description }}</p>
+				</header>
+				
+				<div class="lib__style">
+					{% if site.markdown-styles %}
+						{{ style.content | markdownify }}
+					{% else %}
+						{{ style.content }}
+					{% endif %}
+				</div>
+
+				{% if style.show_code %}
+					<a href="#example-{{ style.title | slugify }}" class="lib__link">View example code &rarrc;</a>
+					<div id="example-{{ style.title | slugify }}" class="lib__source">
+						<pre><code>{% if site.markdown-styles %}{{ style.content | markdownify | xml_escape }}{% else %}{{ style.content | xml_escape }}{% endif %}</code></pre>
+					</div>
+				{% endif %}
+
+			</section><!-- .lib__pattern -->	
+
+		{% endfor %}
+	</div><!-- .lib__patterns -->
+
+</div><!-- .lib__site -->
