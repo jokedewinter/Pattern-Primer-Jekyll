@@ -196,6 +196,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/Gemfile": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_site\/Gemfile",
+		"oF": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
