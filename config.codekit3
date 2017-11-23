@@ -186,22 +186,25 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/screen.min.css": {
+	"\/css\/screen.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/_site\/css\/screen.min.min.css",
+		"oAP": "\/_site\/css\/screen.min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/Gemfile": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_site\/Gemfile",
-		"oF": 0
+	"\/images\/flower.jpg": {
+		"ft": 16384,
+		"iS": 74042,
+		"oA": 0,
+		"oAP": "\/_site\/images\/flower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/index.html": {
 		"cB": 0,

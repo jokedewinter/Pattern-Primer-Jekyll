@@ -8,6 +8,7 @@ markdown: kramdown
 # '/projectname': for subdomains (user.github.io/projectname)
 
 baseurl: '/biothemes-pattern-library'
+#baseurl: ''
 permalink: :title.html
 
 collections:
