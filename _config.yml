@@ -7,7 +7,7 @@ markdown: kramdown
 # '': for root level domains (mycustomdomain.com)
 # '/projectname': for subdomains (user.github.io/projectname)
 
-baseurl: ''
+baseurl: '/cronofy-styleguide'
 permalink: :title.html
 
 collections:
