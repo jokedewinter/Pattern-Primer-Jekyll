@@ -11,9 +11,7 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-html {
-	font-size: 62.5%;
-}
+html { font-size: 62.5%; }
 
 body {
 	clear: both;
@@ -169,9 +167,8 @@ p.lib { font-size: 16px; }
 /**
  * -------------------------------------------------------------
  * Code block
+ * Show and hide
  * ------------------------------------------------------------- */
-
-/* Show and hide */
 
 .lib__source {
 	display: none;
@@ -200,7 +197,6 @@ p.lib { font-size: 16px; }
 .lib__link {
 	display: inline-block;
 	margin-top: 1em;
-	//font-weight: bold;
 	text-decoration: none;
 	border-bottom: 1px solid #999;
 	color: #999;
@@ -251,7 +247,5 @@ p.lib { font-size: 16px; }
 	margin: 0;
 }
 
-.lib__col p {
-	color: #888;
-}
+.lib__col p { color: #888; }
 
