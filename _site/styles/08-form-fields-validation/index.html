@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<title>Form Field Validation</title>
+
+	<!-- Website/Theme CSS -->
+	<link rel="stylesheet" href="css/screen.min.css">
+	<!--<link rel="stylesheet" href="css/screen.min.css">-->
+	<!--<link rel="stylesheet" href="http://oncotherics.com/wp/wp-content/themes/biothemes/css/screen-oncotherics.min.css">-->
+ 	
+ 	<!-- Pattern library CSS -->
+	<link rel="stylesheet" href="css/library.css">
+
+	<!-- This space intentionally left blank. Put your custom web-served fonts here -->
+	<!-- Web Font Loader -->
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Encode+Sans:300,700,900'],
+	    }
+	  });
+	</script>
+
+</head>
+
+
+
+	<body>
+  		<h1>Pattern Sample: Form Field Validation</h1>
+
+<!-- Text field -->
+<p class="form__field form__error">
+	<label for="">Text label <span class="required">*</span></label>
+	<span>&rarr; Your .. is required to send the form</span> 
+	<input type="text" id="" name="" aria-required="true">
+</p>
+
+<!-- Email field -->
+<p class="form__field form__error">
+	<label for="">Your email <span class="required">*</span></label>
+	<span>&rarr; Your email address is required to send the form</span> 
+	<input type="email" id="" name="" aria-required="true">
+</p>
+
+<!-- Textarea -->
+<p class="form__field form__error textbox">
+	<label for="">Message <span class="required">*</span></label>
+	<span>&rarr; A message is required to send the form</span> 
+	<textarea id="" name="" aria-required="true"></textarea>
+</p>
+
+<a href="/" title="A helpful back button!">Back to the primer</a>
+	</body>
+</html>
